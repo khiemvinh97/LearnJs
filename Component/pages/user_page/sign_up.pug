@@ -1,0 +1,16 @@
++breadcrumb(["Đăng kí"])
+section.main__user
+      .container 
+        .row
+          form.form__regis(action="")
+              h3 THÔNG TIN CÁ NHÂN
+              +blog_input_group('Họ tên: ','Email: ')
+              +blog_input_group('Số điện thoại: ','Địa chỉ: ')
+              .check-box__item
+                input(type="checkbox")
+                p Đăng kí nhận tin tức qua mail
+              h3 THÔNG TIN ĐĂNG NHẬP
+              +blog_input_group('Họ tên: ','Email: ')
+              .item__button
+                a(href="#").-right QUAY LẠI
+                a(href="./index.html" onClick="PayCart()").-left ĐĂNG KÍ

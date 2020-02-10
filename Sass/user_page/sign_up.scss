@@ -1,0 +1,48 @@
+.main__user {
+  @extend %pt-1;
+  .form__regis {
+    @include collum($pixel_15, $pixel_15);
+    @include display_flex();
+    @include button();
+    @include input_group();
+    h3 {
+      font-size: $font_small;
+      color: $color_black;
+      @extend %p-col-2;
+      @include flex(100%);
+    }
+    .form__info__item {
+      p {
+        color: $color_black;
+      }
+    }
+    .check-box__item {
+      @include flex(100%);
+      @include display_flex();
+      @extend %p-col-2;
+      input {
+        width: $pixel_15;
+        height: $pixel_15;
+        @include border(0.5px, $color_list);
+      }
+      p {
+        font-size: $font_small;
+        color: $color_list;
+        font-style: italic;
+        margin-left: 10px;
+      }
+    }
+    .item__button {
+      @extend %p-col-2;
+      a{
+        padding: 1rem 2rem;
+        max-height: 50px;
+      }
+      @media (max-width:767px) {
+        &{
+          margin : 0 auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+mixin listIcon(items)
+  -var i=1
+  each item in items 
+    case i
+      when 1
+        li.-left
+          a(href="#")
+            i(class=item)
+            -i=i+1
+      default
+        li
+          a(href="#")
+            i(class=item)
+mixin listmenu(items)
+  -var i=1
+  each item in items
+    case i
+      when 3
+        li
+          a(href="List.html")=item 
+      default
+        li
+          a(href="#")=item
+          -i=i+1
+    
+

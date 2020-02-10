@@ -1,0 +1,13 @@
++breadcrumb(["Tin tức"])
+section.main__blog
+  .container
+    .row
+      .left__item
+        +list_theme(list_item)
+        +list_theme--no-style(list_blog_new)
+        +list_blog_img(list_blog_img)
+        +list_blog_tag(list_blog_tag)
+      .right__item
+        .list__product
+          +list_blog(list_blog_item)
+          +list_grid_footer()

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="index.css")
+    link(rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css")
+    include ./Component/data/data_master.pug    
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    script(src="./js_file/pay.js")
+    include ./Component/mixin/mixin_master.pug
+
+    title Infomation
+  body
+
+    include ./Component/pages/comons/header/header_master.pug
+
+    +breadcrumb(["Thông tin người mua"])
+    .container
+      .row
+        .Process__bar
+          ul
+            li.-active
+              a 
+                i.fas.fa-sync
+              p Giỏ hàng
+            li 
+              a 
+                i.fas.fa-times
+              p Thông tin
+            li
+              a 
+                i.fas.fa-times
+              p Kiểm tra
+            li 
+              a
+                i.fas.fa-times
+              p Xác nhận
+
+    section.main__user
+          .container 
+            .row
+              form.form__regis(action="")
+                  h3 THÔNG TIN CÁ NHÂN
+                  +blog_input_group('Họ tên: ','Email: ',"name",'mail','text','email')
+                  +blog_input_group('Số điện thoại: ','Địa chỉ: ','phone','address','tel','text')
+                  .item__button
+                    a(href="./cart.html").-right QUAY LẠI
+                    a(href="#" onClick="PayCart()").-left XÁC NHẬN
+
+    include ./Component/pages/comons/footer/footer_master.pug

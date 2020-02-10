@@ -1,0 +1,16 @@
+mixin table_item(items)
+  -var i = 1
+  each item in items
+    tr
+      td=i
+      -i=i+1
+      td 
+        img(src=`./img/product/${item}`).img
+      td Máy khoan, cắt đa năng CNC
+      td 2.350.00 Đ
+      td 
+        input(type="text" placeholder=`1`)
+      td 2.350.00 Đ
+      td 
+        a(href="#")
+          i.fas.fa-times

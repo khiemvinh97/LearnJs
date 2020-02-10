@@ -1,0 +1,13 @@
+.highlights {
+  .highltghts__title {
+    @include collum($pixel_15, $pixel_15);
+    display: flex;
+    @extend %pb-2;
+  }
+  .highlights__product {
+    @include collum(0px, 0px);
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}

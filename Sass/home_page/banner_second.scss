@@ -1,0 +1,47 @@
+
+.banner__second {
+  .container{
+    background-color: rgb(238, 238, 238);
+
+  }
+  .banner__img {
+    @include collum($pixel_15, $pixel_15);
+    @include flex(50%);
+  }
+  .banner__text {
+    @include collum($pixel_15, $pixel_15);
+    @include flex(50%);
+    @extend %p-1;
+    text-align: center;
+    h3 {
+      font-size: 36px;
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+    }
+    @include button();
+    .item__button {
+      a {
+        &.-right {
+          background-color: rgb(238, 238, 238);
+          color: black;
+          @include border-bottom(0.5px,black);
+
+        }
+      }
+    }
+  }
+  @media (max-width:767px) {
+    .banner__img{
+      @include flex(100%);
+      @include border-left($pixel_15,white);
+      @include border-right($pixel_15,white);
+
+    }
+    .banner__text{
+      display: none;
+    }
+    
+  }
+}

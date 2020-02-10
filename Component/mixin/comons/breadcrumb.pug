@@ -1,0 +1,9 @@
+mixin breadcrumb([...args])
+  .container
+    .row
+      .breadcrumb
+        span= "Trang chủ"
+        for v, index in args
+          span 
+            i.fas.fa-caret-right
+          span= v

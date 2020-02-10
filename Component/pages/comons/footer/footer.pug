@@ -1,0 +1,25 @@
+footer
+  section.main__foot
+    .container
+      .row
+        .pay__item
+          p Thanh toán:
+          .foot__bank
+            -for(var i=0 ; i<8;i++)
+              .bank__img
+                img(src=`./img/bank/bank${i+1}.jpg`).img
+        .pay__item
+          p Giải đáp nhanh:
+          .foot__answer
+            +answer_item(answer_item)
+  section.bonus__foot
+    .container
+      .row
+        .bonus__text
+          p Bản quyền thuộc về 
+            span Design Team. 
+          p Phát triển bởi 
+            span Bizweb.
+        .bonus__text
+          ul
+            +list_footer(listmenu)

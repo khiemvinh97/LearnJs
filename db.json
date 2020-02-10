@@ -1,0 +1,334 @@
+{
+  "hightlight": [
+    {
+      "id": "new1",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro1.jpg",
+      "count": 1
+    },
+    {
+      "id": "new2",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro2.jpg",
+      "count": 1
+    },
+    {
+      "id": "new3",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro3.jpg",
+      "count": 1
+    },
+    {
+      "id": "new4",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro4.jpg",
+      "count": 1
+    },
+    {
+      "id": "new5",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro5.jpg",
+      "count": 1
+    },
+    {
+      "id": "new6",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro6.jpg",
+      "count": 1
+    }
+  ],
+  "new": [
+    {
+      "id": "new7",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "new1.jpg",
+      "count": 1
+    },
+    {
+      "id": "new8",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "new2.jpg",
+      "count": 1
+    },
+    {
+      "id": "new9",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "new3.jpg",
+      "count": 1
+    }
+  ],
+  "hot":[
+    {
+      "id": "new8",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "new2.jpg",
+      "count": 1
+    },
+    {
+      "id": "new3",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro3.jpg",
+      "count": 1
+    },
+    {
+      "id": "new11",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "hot.jpg",
+      "count": 1
+    }, {
+      "id": "new12",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro5.jpg",
+      "count": 1
+    },
+    {
+      "id": "new13",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro6.jpg",
+      "count": 1
+    }
+  ],
+  "lastest":[
+    {
+      "id": "new14",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "2350000",
+      "img": "pro4.jpg",
+      "count": 1
+    },
+    {
+      "id": "new15",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "2350000",
+      "img": "pro3.jpg",
+      "count": 1
+    },
+    {
+      "id": "new16",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "2350000",
+      "img": "pro2.jpg",
+      "count": 1
+    }, {
+      "id": "new17",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "2350000",
+      "img": "new1.jpg",
+      "count": 1
+    },
+    {
+      "id": "new18",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "2350000",
+      "img": "new1.jpg",
+      "count": 1
+    }
+  ],
+  "list" :[
+    {
+      "id": "new19",
+      "name": "MÁY KHOAN CNC 3D",
+      "price": "2350000",
+      "img": "new2.jpg",
+      "count": 1
+    },
+    {
+      "id": "new16",
+      "name": "MÁY KHOAN CNC 3D",
+      "price": "2350000",
+      "img": "pro2.jpg",
+      "count": 1
+    },
+    {
+      "id": "new17",
+      "name": "MÁY KHOAN CNC 3D",
+      "price": "2350000",
+      "img": "new1.jpg",
+      "count": 1
+    },
+    {
+      "id": "new15",
+      "name": "MÁY KHOAN CNC 3D",
+      "price": "2350000",
+      "img": "pro3.jpg",
+      "count": 1
+    },
+    {
+      "id": "new20",
+      "name": "MÁY KHOAN CNC 3D",
+      "price": "2350000",
+      "img": "new3.jpg",
+      "count": 1
+    },
+    {
+      "id": "new14",
+      "name": "MÁY KHOAN CNC 3D",
+      "price": "2350000",
+      "img": "pro4.jpg",
+      "count": 1
+    },
+    {
+      "id": "new21",
+      "name": "MÁY KHOAN CNC 3D",
+      "price": "2350000",
+      "img": "pro9.jpg",
+      "count": 1
+    },
+    {
+      "id": "new22",
+      "name": "MÁY KHOAN CNC 3D",
+      "price": "2350000",
+      "img": "pro10.jpg",
+      "count": 1
+    },
+    {
+      "id": "new23",
+      "name": "MÁY KHOAN CNC 3D",
+      "price": "2350000",
+      "img": "pro11.jpg",
+      "count": 1
+    }
+  ],
+  "grid":[
+    {
+      "id": "new1",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro1.jpg",
+      "count": 1
+    },
+    {
+      "id": "new2",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro2.jpg",
+      "count": 1
+    },
+    {
+      "id": "new3",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro3.jpg",
+      "count": 1
+    },
+    {
+      "id": "new4",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro4.jpg",
+      "count": 1
+    },
+    {
+      "id": "new5",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro5.jpg",
+      "count": 1
+    },
+    {
+      "id": "new6",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro6.jpg",
+      "count": 1
+    },
+    {
+      "id": "new8",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "new2.jpg",
+      "count": 1
+    },
+    {
+      "id": "new7",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "new1.jpg",
+      "count": 1
+    },
+    {
+      "id": "new4",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro4.jpg",
+      "count": 1
+    },
+    {
+      "id": "new9",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "new3.jpg",
+      "count": 1
+    },
+    {
+      "id": "new3",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro3.jpg",
+      "count": 1
+    },
+    {
+      "id": "new5",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro5.jpg",
+      "count": 1
+    },
+    {
+      "id": "new24",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro9.jpg",
+      "count": 1
+    },
+    {
+      "id": "new25",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro8.jpg",
+      "count": 1
+    },
+    {
+      "id": "new26",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro7.jpg",
+      "count": 1
+    },
+    {
+      "id": "new24",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro9.jpg",
+      "count": 1
+    },
+    {
+      "id": "new25",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro8.jpg",
+      "count": 1
+    },
+    {
+      "id": "new26",
+      "name": "MÁY KHOAN BLACK DECKER",
+      "price": "1550000",
+      "img": "pro7.jpg",
+      "count": 1
+    }
+  ]
+}

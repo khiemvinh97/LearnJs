@@ -1,0 +1,136 @@
+mixin product_item(items)
+  -var x=1
+  each item in items
+    case x
+      when 1
+        .product__item
+          .shadow__item
+            .item__img
+              img(src=`./img/product/${item}`).img
+            .item__info
+              h4.-price 1.550.000 Đ
+              h4 MÁY KHOAN BLACK DECKER
+              p
+                -for (var i = 0; i < 4 ; i++)
+                  i.fa.fa-star
+                i.far.fa-star
+                br
+                |(12 Đánh giá)
+            .item__button
+              a(href="#").-left.-add-cart MUA NGAY
+              a(href="#").-right XEM CHI TIẾT
+                -x=x+1
+      default
+        .product__item.-hide
+          .shadow__item
+            .item__img
+              img(src=`./img/product/${item}`).img
+            .item__info
+              h4.-price 1.550.000 Đ
+              h4 MÁY KHOAN BLACK DECKER
+              p
+                -for (var i = 0; i < 4 ; i++)
+                  i.fa.fa-star
+                i.far.fa-star
+                br
+                |(12 Đánh giá)
+            .item__button
+              a(href="#").-left.add-cart MUA NGAY
+              a(href="#").-right XEM CHI TIẾT
+
+
+mixin product_only(img,display)
+  .product__item(class=`${display}`)
+    .shadow__item
+      .item__img
+        img(src=`./img/product/${img}.jpg`).img
+      .item__info
+        h4.-price 1.550.000 Đ
+        h4 MÁY KHOAN BLACK DECKER
+        p
+          -for (var i = 0; i < 4 ; i++)
+            i.fa.fa-star
+          i.far.fa-star
+          br
+          |(12 Đánh giá)
+      .item__button
+        a(href="#").-left MUA NGAY
+        a(href="#").-right XEM CHI TIẾT
+
+
+mixin product_info(items,text)
+  -var x=1
+  each item in items
+    case x
+      when 1
+        .product__last
+          .shadow__item
+            .img__last
+              img(src=`./img/product/${item}`).img
+            .text__last
+              h4 MÁY KHOAN CNC 3D
+              p
+                -for (var i = 0; i < 4 ; i++)
+                  i.fa.fa-star
+                i.far.fa-star
+                |(12 Đánh giá)
+              p=text
+              h4.-price 2.350.000 Đ
+              .item__button
+                a(href="#").-left MUA NGAY
+                a(href="#").-right XEM CHI TIẾT
+              -x=x+1
+      default
+        .product__last.-hide
+          .shadow__item
+            .img__last
+              img(src=`./img/product/${item}`).img
+            .text__last
+              h4 MÁY KHOAN CNC 3D
+              p
+                -for (var i = 0; i < 4 ; i++)
+                  i.fa.fa-star
+                i.far.fa-star
+                |(12 Đánh giá)
+              p=text
+              h4.-price 2.350.000 Đ
+              .item__button
+                a(href="#").-left MUA NGAY
+                a(href="#").-right XEM CHI TIẾT
+
+mixin product_detail()
+  .product__detail
+    .product__detail__img
+      img(src="./img/product/detail1.jpg").img
+      .product__detail__bonus
+        -for(var i=0;i<5;i++)
+          img(src=`./img/product/detail${i+2}.jpg`).img
+    .product__detail__info
+      h3 MÁY KHOAN CNC 3D
+      p.star
+        -for (var i = 0; i < 4 ; i++)
+          i.fa.fa-star
+        i.far.fa-star
+        |(12 Đánh giá) 
+        span 
+        a(href="#") Gửi bình luận của bạn
+      h4 GNY : 2.3500.000Đ
+      h5 Thông tin sản phẩm :
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercition ullamco laboris nisi ut aliquip ex ea commodo consequat...
+      .info__dropdown
+        .dropdown__item
+          h5 Size:
+          input(type="text" placeholder="--Chọn size--")
+          i.fa.fa-caret-down
+        .dropdown__item
+          h5 Màu sắc:
+          input(type="text" placeholder="--Chọn màu--")
+          i.fa.fa-caret-down
+      .info__count
+        .count__input
+          input(type="text" placeholder="1")
+          .info__count__carret
+            i.fa.fa-caret-up
+            i.fa.fa-caret-down
+        .count__buy 
+          a(href="#") MUA NGAY  

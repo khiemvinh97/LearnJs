@@ -1,0 +1,46 @@
+
+mixin list_grid_header(num_show,button_active)
+  case button_active
+    when 1
+      .list__header
+        .order__style
+          p Sắp xếp theo: 
+          input(type="text" placeholder="Tên sản phẩm")
+          i.fa.fa-caret-down
+        .order__style.-small
+          p Show: 
+          input.-small(type="text" placeholder=`${num_show}`)
+
+          i.fa.fa-caret-down
+        .order__button
+          span
+            a(href="list.html")
+              i.fas.fa-bars.-active
+          span
+            a(href="grid.html")
+              i.fas.fa-th
+    default
+      .list__header
+        .order__style
+          p Sắp xếp theo: 
+          input(type="text" placeholder="Tên sản phẩm")
+          i.fa.fa-caret-down
+        .order__style.-small
+          p Show: 
+          input.-small(type="text" placeholder=`${num_show}`).
+          i.fa.fa-caret-down
+        .order__button
+          span
+            a(href="list.html")
+              i.fas.fa-bars
+          span
+            a(href="grid.html")
+              i.fas.fa-th.-active
+
+mixin list_grid_footer()
+  .list__footer
+    span Trang trước
+    span 1
+    span 2
+    span 3
+    span Trang cuối

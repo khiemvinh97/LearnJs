@@ -1,0 +1,70 @@
+mixin list_blog(items)
+  each item in items
+    .list__blog
+      img(src=`./img/blog/${item}`).img
+      .list__blog__text
+        h3 THẾ HỆ MÁY KHOAN CẮT CNC ĐẦU TIÊN ĐÃ ĐƯỢC TÁI SỬ DỤNG
+        .post-by
+          p Thứ năm, ngày 23/10/2015 8:00 AM
+          p
+            i.fa.fa-user 
+            | Đăng bởi 
+            span  Design Team
+          p
+            i.fas.fa-comments
+            |12 Bình luận
+        p.-boder But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure...
+          a(href="#") [Đọc tiếp]
+
+mixin blog_detail_tag(items)
+  each item in items
+    a(href="#")=item
+mixin blog_detail_social(items)
+  each item in items 
+    span
+      i(class=item)
+
+
+mixin blog_chat()
+  -for( var i=0 ;i<3;i++)
+    .blog__detail__comment(class=`-count${i+1}`)
+      img(src="./img/blog/blog_user.jpg").img
+      .comment__content
+        h3 HOANG TRUONG ANH
+        .day-post 
+          p Thứ năm, ngày 23/10/2015 8:00 AM
+          a(href="#") Trả lời
+        p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+
+mixin blog_detail(items)
+  each item in items
+    .blog__detail
+      .list__blog
+        img(src="./img/blog/blog_main1.jpg").img
+        .list__blog__text
+          h3=item.name
+          .post-by
+            p=item.date
+            p
+              i.fa.fa-user 
+              | Đăng bởi 
+              span=item.user
+            p
+              i.fas.fa-comments
+              |12 Bình luận
+          each parts in item.text
+            p=parts.text1
+            p=parts.text2
+            #parts.img_blog
+              if parts.img_blog == undefined
+                p=parts.text3
+              else
+                .blog__detail__img 
+                  img(src=`./img/blog/${parts.img_blog}`).img
+      .blog__detail__footer
+        .blog__detail__footer__left
+          h3 TAGS: 
+          +blog_detail_tag(blog_detail_tag)
+        .blog__detail__footer__right
+          h3 CHIA SẺ:
+          +blog_detail_social(listIcon)   

@@ -1,0 +1,42 @@
++breadcrumb(['Giỏ hàng'])
+
+.container
+  .row
+    .Process__bar
+      ul
+        li.-active
+          a 
+            i.fas.fa-sync
+          p Giỏ hàng
+        li 
+          a 
+            i.fas.fa-times
+          p Thông tin
+        li
+          a 
+            i.fas.fa-times
+          p Kiểm tra
+        li 
+          a
+            i.fas.fa-times
+          p Xác nhận
+
+section.cart__main
+  .container
+    .row
+      .cart__table
+        table
+          tr
+            th.count STT
+            th.pro SẢN PHẨM
+            th.info THÔNG TIN
+            th.privce ĐƠN GIÁ
+            th.num SỐ LƯỢNG
+            th.sum THÀNH TIỀN
+            th.delete XÓA
+      .sum__table
+
+      .cart__button
+        .item__button
+          a(href="./index.html").-right tiếp tục mua hàng
+          a(href="#" onClick="payCart()").-left thanh toán

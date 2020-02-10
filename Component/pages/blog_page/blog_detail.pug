@@ -1,0 +1,27 @@
++breadcrumb(["Tin tức"])
+section.main__blog
+  .container
+    .row
+      .left__item
+        +list_theme(list_item)
+        +list_theme--no-style(list_blog_new)
+        +list_blog_img(list_blog_img)
+        +list_blog_tag(list_blog_tag)
+      .right__item
+        .list__product
+          +blog_detail(blog_detail_data)
+        .blog__detail__chat
+          h3 BÌNH LUẬN:
+          +blog_chat()
+
+        .blog__detail__form
+          h3 VIẾT BÌNH LUẬN CỦA BẠN
+          form.form__blog(action="")
+            .form__info
+              +blog_input_group('Họ tên: ','Email: ')
+              .form__comment
+                p Bình Luận
+                input(type="text")
+
+            .item__button.-start
+              a(href="#").-left GỬI BÌNH LUẬN

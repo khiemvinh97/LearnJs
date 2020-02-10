@@ -1,0 +1,25 @@
+mixin about_item(title,items)
+  .about__item
+    h3
+      i.fa.fa-th-large
+      |#{title}
+    ul
+      each item in items
+        li
+          p
+            i(class=item.icon)
+            =item.text
+
+mixin answer_item(items)
+  each item in items 
+    .answer__item
+      .answer__icon
+        i(class=item.icon)
+      .answer__text
+        p=item.text
+        span=item.phone
+
+mixin list_footer(items)
+  each item in items
+    li 
+      a(href="#")=item

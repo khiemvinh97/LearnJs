@@ -1,0 +1,133 @@
+@import "./Sass/extend.scss";
+@import "./Sass/mixin.scss";
+@import "./Sass/var.scss";
+@import "./Sass/deafault.scss";
+@import "./Sass/header/header_master.scss";
+@import "./Sass/titlle/title_master.scss";
+@import "./Sass/product_page/product_master.scss";
+@import "./Sass/home_page/home_page_master.scss";
+@import "./Sass/footer/footer_master.scss";
+@import "./Sass/item_position/item_pos_master.scss";
+@import "./Sass/list_grid_page/list_grid_master.scss";
+@import "./Sass//blog_page/blog_master.scss";
+@import "./Sass/user_page/user_master.scss";
+@import "./Sass/cart_page/cart.scss";
+@import "./Sass//error_page/error.scss";
+@import "./Sass/pop_up/pop_up.scss";
+@import "./Sass/slider_page/slider_page.scss";
+
+.confirm__text{
+  flex: 0 0 100%;
+  text-align: center;
+  @extend %p-col-1;
+  h4{
+    font-size: 30px;
+    font-weight: 600;
+    color: #f5bd10;
+    @extend %p-col-1;
+  }
+  h5{
+    font-size: 20px;
+    font-weight: 500;
+    span{
+      color: red;
+    }
+  }
+}
+
+.Process__bar{
+  color: #f5bd10 ;
+  flex: 0 0 80%;
+  margin: 0 auto;
+  ul{
+    list-style: none;
+    text-align: center;
+    li{
+      width: 25%;
+      display: inline-block;
+      position: relative;
+      i{
+        margin-bottom: 1rem;
+        background-color:#ccc;
+        width: 25px;
+        height: 25px;
+        color: white;
+        border-radius: 50%;
+        &::before{
+          display: block;
+          padding-top: 4px;
+        }
+        &::after {
+          content: '';
+          background-color: #ccc;
+          height: 5px;
+          width: 100%;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 8px;
+          z-index: -1;
+        }
+ 
+      }
+      &.-active {
+        i{
+          background-color: #f5bd10;
+          &::after{
+            background-color: #f5bd10;
+          } 
+        }
+ 
+        
+      }
+      &.-success  {
+        i {
+          background-color: red;
+          &::after{
+            background-color: red;
+          }
+        }
+      }
+    }
+    }
+
+}
+
+.confirm__text{
+  @include collum($pixel_15, $pixel_15);
+  @include flex(100%);
+  overflow-x: auto;
+  table {
+    margin-top: 2rem;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    tr {
+      @extend %p-col-2;
+      th {
+        @extend %p-col-2;
+        @include border(1px, $color_border);
+        font-size: $font_small;
+        color: $color_black_bt;
+        text-align: center;
+      }
+      td {
+        @include border(1px, $color_border);
+        @extend %p-col-2;
+        font-size: $font_small;
+        color: $color_black_bt;
+        text-align: center;
+        input {
+          width: 40px;
+          height: 40px;
+          text-align: center;
+        }
+        i {
+          color: red;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

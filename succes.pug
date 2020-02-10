@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="index.css")
+    link(rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css")
+    include ./Component/data/data_master.pug    
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    script(src="./js_file/success.js")
+    include ./Component/mixin/mixin_master.pug
+
+    title Infomation
+  body
+
+    include ./Component/pages/comons/header/header_master.pug
+
+    +breadcrumb(["Xác nhận thông tin"])
+    .container
+      .row
+        .Process__bar
+          ul
+            li.-active
+              a 
+                i.fas.fa-sync
+              p Giỏ hàng
+            li 
+              a 
+                i.fas.fa-times
+              p Thông tin
+            li
+              a 
+                i.fas.fa-times
+              p Kiểm tra
+            li 
+              a
+                i.fas.fa-times
+              p Xác nhận
+    section.main__user
+      .container 
+        .row
+          form.form__regis(action="")
+            .confirm__text
+              h5 Bạn đã đặt hàng thành công, chúng tôi sẽ liên lạc đến bạn sớm nhất để xác nhận thông tin đơn hàng
+            .item__button(style="margin:0 auto")
+              a(href="javascript:delay('index.html')" onClick="Success()").-left Xác nhận 
+
+    include ./Component/pages/comons/footer/footer_master.pug

@@ -1,0 +1,44 @@
+.hot {
+  @extend %p-col-2;
+  .hot__title {
+    @include collum($pixel_15,$pixel_15);
+    display: flex;
+    padding-bottom: 40px;
+  }
+  .hot__product{
+    @include collum(0px,0px);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hot__small {
+    @include collum($pixel_15, $pixel_15);
+    @include flex(26%);
+    display: flex;
+    flex-wrap: wrap;
+    .product__item{
+      @include flex(100%)
+    }
+    @media (max-width: 767px){
+      &{
+        @include flex(100%);
+      }
+    }
+  }
+  .hot__large {
+    @include collum($pixel_15, $pixel_15);
+    @include flex(48%);
+    .product__item{
+      height: 100%;
+      .shadow__item{
+        height: 100%;
+        padding-top: 100px;
+        .item__info{
+          font-size: $font_18;
+        }
+      }
+    }
+    .product__item {
+      @include flex(100%);
+    }
+  }
+}

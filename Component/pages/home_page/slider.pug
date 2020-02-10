@@ -1,0 +1,18 @@
+section.slider
+  .container
+    .row        
+      .slider__item
+        .slider__content
+          .slide__show
+            -for (var x = 0 ;x < 3 ; x++)
+              .slide__img
+                img(src="img/slide1.jpg").img
+          .slider__button
+            a(href="#")
+              span
+            a(href="#")
+              span.-center
+            a(href="#")
+              span
+      .slider__text
+        +slider_beside(slider_beside)

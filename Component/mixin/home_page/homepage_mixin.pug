@@ -1,0 +1,54 @@
+mixin slider_beside(items)
+  each item in items 
+    .slider__content
+      i(class= item.icon)
+      .text__info
+        h3= item.title
+        p= item.text
+mixin title_part(text)
+  .title__text
+    h3
+      i.fa.fa-th-large
+      |#{text}
+
+mixin togle()
+  .title__togle
+    .togle.-left
+      i.fa.fa-caret-right
+    .togle.-right
+      i.fa.fa-caret-left
+
+mixin list_new(items)
+  .title_list
+    each item in items
+      a(href="#")=item
+
+mixin banner(items)
+  each item in items
+    .banner__item
+      .banner__text
+        h3=item.name
+        h4=item.info
+        a(href="#")=item.price
+        p=item.dec
+          span=item.span
+      .banner__img
+        img(src=`./img/banner/${item.img}.jpg`).img
+      .banner__sale
+        .banner__sale__circle
+          .banner__sale__circle__text
+            h3 SALE
+            h3=item.sale
+
+mixin brand()
+  -for (var  i = 0 ; i<5 ; i++)
+    case i
+      when 1
+        .brand__img.-only
+          img(src=`img/brand/brand${i+1}.jpg`).img
+      default
+        .brand__img.-hide
+          img(src=`img/brand/brand${i+1}.jpg`).img
+
+
+

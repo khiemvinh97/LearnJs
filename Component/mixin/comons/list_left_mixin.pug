@@ -1,0 +1,109 @@
+mixin list_theme(items)
+  ul
+    -var i=1
+    each item in items
+      case i
+        when 1
+          li.-active
+            a(href="#")
+              i(class=item.icon)
+              |#{item.text}
+            i.fas.fa-angle-down.-hide
+              -i=i+1
+        default
+          li
+            a(href="#")
+              i.fa.fa-th-large
+              |#{item}
+mixin list_theme--no-style(items)
+  ul.-blog
+    -var i=1
+    each item in items
+      case i
+        when 1
+          li
+            a(href="#")
+              i(class=item.icon)
+              |#{item.text}
+            i.fas.fa-angle-down.-hide
+              -i=i+1
+        default
+          li
+            a(href="#")
+              |#{item}
+
+
+mixin list_color(items)
+  ul
+    -var i=1
+    each item in items
+      case i
+        when 1
+          li.-active
+            a(href="#")
+              i(class=item.icon)
+              |#{item.text}
+            i.fas.fa-angle-down.-hide
+              -i=i+1
+        default
+          li
+            a(href="#")
+              span(style=`background-color:${item.color}`)
+              |#{item.text}
+
+mixin list_img(items)
+  ul
+    -var i=1
+    each item in items
+      case i
+        when 1
+          li.-active
+            a(href="#")
+              i(class=item.icon)
+              |#{item.text}
+            i.fas.fa-angle-down.-hide
+              -i=i+1
+        default
+          li
+            .list__img
+              .img__link
+                img(src=`./img/product/${item.img}`).img
+              .img__info
+                a(href="#")
+                  h3 MÁY KHOAN BLACK DECKER LOẠI 1
+                  p 1.550.000Đ
+
+mixin list_blog_img(items)
+  ul.-blog.-nboder
+    -var i=1
+    each item in items
+      case i
+        when 1
+          li
+            a(href="#")
+              i(class=item.icon)
+              |#{item.text}
+            i.fas.fa-angle-down.-hide
+              -i=i+1
+        default
+          li.-list__blog__img
+            a(href="#")
+              img(src=`./img/blog/${item}`).img
+
+
+mixin list_blog_tag(items)
+  ul.-blog.-nboder
+    -var i=1
+    each item in items
+      case i
+        when 1
+          li
+            a(href="#")
+              i(class=item.icon)
+              |#{item.text}
+            i.fas.fa-angle-down.-hide
+              -i=i+1
+        default
+          li.-list__blog__tag
+            a(href="#")=item
+            

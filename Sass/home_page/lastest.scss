@@ -1,0 +1,12 @@
+.lastest {
+  @extend %p-col-2;
+  .title__last{
+    @include collum($pixel_15,$pixel_15);
+    @include display_flex();
+    padding-bottom: 40px;
+  }
+  .lastest__product{
+    @include collum($pixel_15,$pixel_15);
+    @include display_flex();
+  }
+}
